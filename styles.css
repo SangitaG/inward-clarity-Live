@@ -7135,3 +7135,7 @@ body.screen12-open .screen12{
     background-size:auto 116%;
   }
 }
+
+/* Authorized Screen 9 My Story hover refinement only. */
+.screen9-story-link:hover .screen9-arrow-circle,
+.screen9-story-link:focus-visible .screen9-arrow-circle{background:rgba(184,121,24,.08);color:#9b6614}
