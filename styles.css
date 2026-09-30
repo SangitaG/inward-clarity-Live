@@ -7139,3 +7139,58 @@ body.screen12-open .screen12{
 /* Authorized Screen 9 My Story hover refinement only. */
 .screen9-story-link:hover .screen9-arrow-circle,
 .screen9-story-link:focus-visible .screen9-arrow-circle{background:rgba(184,121,24,.08);color:#9b6614}
+
+/* v73 desktop Welcome visual preview only.
+   Keeps the v69 site structure intact while displaying the approved visual direction.
+   The existing CTA remains clickable but is transparent because the preview artwork
+   already contains the button and descriptor. */
+@media (min-width:701px){
+  .welcome-module .desktop-cta-hotspot{
+    left:56.5%;
+    top:78.0%;
+    width:30.5%;
+    height:7.5%;
+    background:transparent;
+    color:transparent;
+    box-shadow:none;
+  }
+  .welcome-module .desktop-cta-hotspot::before,
+  .welcome-module .desktop-cta-hotspot::after{content:none;}
+}
+
+/* v76 — Welcome desktop CTA hotspot: interaction only.
+   The approved v73 artwork already contains the complete CTA and descriptor.
+   Keep this anchor clickable while making every visual layer fully transparent. */
+@media (min-width:701px){
+  .welcome-module .desktop-cta-hotspot,
+  .welcome-module .desktop-cta-hotspot:hover,
+  .welcome-module .desktop-cta-hotspot:focus,
+  .welcome-module .desktop-cta-hotspot:active,
+  .welcome-module .desktop-cta-hotspot:visited{
+    left:56.5% !important;
+    top:78.0% !important;
+    width:30.5% !important;
+    height:7.5% !important;
+    display:block !important;
+    background:none !important;
+    background-color:transparent !important;
+    background-image:none !important;
+    border:0 !important;
+    border-radius:0 !important;
+    box-shadow:none !important;
+    color:transparent !important;
+    opacity:1 !important;
+    outline-offset:2px;
+    overflow:visible !important;
+    text-shadow:none !important;
+    text-decoration:none !important;
+  }
+  .welcome-module .desktop-cta-hotspot::before,
+  .welcome-module .desktop-cta-hotspot::after{
+    content:none !important;
+    display:none !important;
+    background:none !important;
+    border:0 !important;
+    box-shadow:none !important;
+  }
+}
