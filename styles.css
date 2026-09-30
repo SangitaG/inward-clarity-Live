@@ -7200,3 +7200,97 @@ body.screen12-open .screen12{
     box-shadow:none !important;
   }
 }
+
+
+/* V80 — MOBILE MY PHILOSOPHY PREMISE WRAP + BREATHING ONLY */
+@media (min-width:901px){
+  .my-philosophy-premise-mobile-break{display:none !important;}
+}
+@media (max-width:900px){
+  .my-philosophy-premise{ text-align:center !important; }
+  .my-philosophy-premise-first,
+  .my-philosophy-premise-second{ display:inline-block; text-align:center; }
+  .my-philosophy-premise-second{ margin-top:8px; }
+}
+
+/* v85 — DESKTOP WELCOME ONLY.
+   Geometry is translated from the exact v80 900x600 approved artwork.
+   The approved flat-sand portrait asset is untouched; typography is live HTML. */
+@media (min-width:701px){
+  .desktop-band-wrap{container-type:inline-size;}
+  .desktop-welcome-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;}
+  .desktop-welcome-copy{
+    position:absolute;
+    left:50.2%; top:0;
+    width:49.8%; height:100%;
+    display:flex; flex-direction:column; align-items:center;
+    color:#15385d;
+    font-family:Baskerville, Georgia, "Times New Roman", serif;
+    text-align:center;
+    pointer-events:none;
+  }
+  .desktop-welcome-copy h1{
+    margin:7.1cqw 0 0;
+    color:#b87918;
+    font-family:Baskerville, Georgia, "Times New Roman", serif;
+    font-size:5.55cqw;
+    line-height:.92;
+    font-weight:400;
+    letter-spacing:-.035em;
+  }
+  .desktop-welcome-divider{
+    width:18.2cqw; height:1.2cqw;
+    margin-top:2.25cqw;
+    display:flex;align-items:center;justify-content:center;gap:1.0cqw;
+    color:#b87918;
+  }
+  .desktop-welcome-divider span{height:1px;background:#c89d68;flex:1;}
+  .desktop-welcome-divider b{font-size:1.25cqw;line-height:1;font-weight:400;}
+  .desktop-welcome-primary{
+    margin:2.45cqw 0 0;
+    font-size:3.05cqw;
+    line-height:1.06;
+    font-weight:400;
+    letter-spacing:-.02em;
+    white-space:nowrap;
+  }
+  .desktop-welcome-secondary{
+    margin:1.55cqw 0 0;
+    font-size:2.09cqw;
+    line-height:1.15;
+    font-weight:400;
+    white-space:nowrap;
+  }
+  .desktop-welcome-divider-2{margin-top:2.35cqw;}
+  .desktop-welcome-signature{
+    margin-top:2.15cqw;
+    font-size:3.05cqw;
+    line-height:1;
+    font-weight:400;
+  }
+  .desktop-welcome-cta{
+    pointer-events:auto;
+    margin-top:2.0cqw;
+    width:30.4cqw;
+    height:5.15cqw;
+    display:flex;align-items:center;justify-content:center;gap:.8cqw;
+    border-radius:.8cqw;
+    background:linear-gradient(#c98a30,#b8751e);
+    box-shadow:0 .18cqw .35cqw rgba(80,50,15,.16);
+    color:#fff;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:1.63cqw;
+    font-weight:400;
+    text-decoration:none;
+    letter-spacing:0;
+  }
+  .desktop-welcome-cta span{font-size:1.85cqw;line-height:1;}
+  .desktop-welcome-note{
+    margin-top:1.0cqw;
+    font-size:1.47cqw;
+    line-height:1;
+    color:#15385d;
+    white-space:nowrap;
+  }
+  .desktop-cta-hotspot{display:none !important;}
+}
