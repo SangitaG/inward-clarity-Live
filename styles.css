@@ -196,7 +196,7 @@ body{overflow-x:hidden;overflow-y:auto}
   }
 
   .mobile-copy .mobile-welcome-secondary{
-    margin-top:1.7vw;
+    margin-top:calc(1.7vw + 14px);
     font-size:4.25vw;
     line-height:1.45;
   }
